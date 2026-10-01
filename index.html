@@ -736,21 +736,7 @@
 
   </form>
 
-  <!-- ============ RECORD LOG ============ -->
-  <div class="section log-section">
-    <div class="section-head">
-      <div class="section-num" style="background:var(--navy-900);color:#fff;">⧉</div>
-      <h2>Submitted Records (this device)</h2>
-      <span class="hint" id="hintExport"></span>
-    </div>
-    <div id="logTableWrap">
-      <div class="empty-log" id="emptyLog">No records submitted yet on this device.</div>
-    </div>
-    <div class="actions-bar" style="border-top:1px solid var(--line);">
-      <button type="button" class="btn btn-secondary" id="exportExcelBtn" disabled>Export All Records to Excel (.xlsx)</button>
-      <button type="button" class="btn btn-ghost" id="clearLogBtn" disabled>Clear Local Log</button>
-    </div>
-  </div>
+  
 
 </div>
 
@@ -923,39 +909,12 @@ function saveRecords(records){
   localStorage.setItem('docs_bpr_records', JSON.stringify(records));
 }
 function renderLog(){
-  const records = loadRecords();
-  const wrap = document.getElementById('logTableWrap');
-  document.getElementById('recordCountDisplay').textContent = records.length;
-  const exportBtn = document.getElementById('exportExcelBtn');
-  const clearBtn = document.getElementById('clearLogBtn');
-  exportBtn.disabled = records.length === 0;
-  clearBtn.disabled = records.length === 0;
-
-  if(records.length === 0){
-    wrap.innerHTML = '<div class="empty-log" id="emptyLog">No records submitted yet on this device.</div>';
-    return;
+  // Local record log UI has been removed.
+  // Keep this function for compatibility with the existing submit flow.
+  const countEl = document.getElementById('recordCountDisplay');
+  if(countEl){
+    countEl.textContent = loadRecords().length;
   }
-  let rows = records.slice().reverse().map(r=>{
-    const flags = [];
-    if(r.bmsFlagged) flags.push('BMS');
-    if(r.lcdFlagged) flags.push('LCD');
-    if(r.comcardFlagged) flags.push('COM CARD');
-    if(r.unknownFlagged) flags.push('Other');
-    return `<tr>
-      <td class="ref">${r.referenceNumber}</td>
-      <td>${r.batteryModel}</td>
-      <td>${r.labName}</td>
-      <td>${r.serialNumber}</td>
-      <td>${(r.inspectionDateTime||'').replace('T',' ')}</td>
-      <td>${flags.join(', ') || '—'}</td>
-    </tr>`;
-  }).join('');
-  wrap.innerHTML = `<table>
-    <thead><tr>
-      <th>Reference No.</th><th>Battery Model</th><th>Lab</th><th>Serial No.</th><th>Date &amp; Time</th><th>Flagged Components</th>
-    </tr></thead>
-    <tbody>${rows}</tbody>
-  </table>`;
 }
 renderLog();
 
@@ -966,7 +925,7 @@ document.getElementById('clearLogBtn').addEventListener('click', ()=>{
   }
 });
 
-/* ====================== EXCEL EXPORT ====================== */
+/* ====================== EXCEL EXPORT ====================== 
 document.getElementById('exportExcelBtn').addEventListener('click', ()=>{
   const records = loadRecords();
   if(records.length===0) return;
@@ -992,7 +951,7 @@ document.getElementById('exportExcelBtn').addEventListener('click', ()=>{
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, 'BPR Records');
   const stamp = new Date().toISOString().slice(0,10);
-  XLSX.writeFile(wb, `KNOX-Battery-Parts-Replacement-Records-${stamp}.xlsx`);
+  XLSX.writeFile(wb, `KNOX-Battery-Parts-Replacement-Records-${stamp}.xlsx`);*/
 });
 
 /* ====================== PDF GENERATION ====================== */
