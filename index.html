@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -52,415 +53,417 @@
   }
   a{color:inherit;}
 
-  /* ---------- Top identity bar ---------- */
-  .topbar{
-    background:var(--brand-gradient);
-    color:#eef2f6;
-    border-bottom:3px solid var(--brand-red);
-  }
-  .topbar-inner{
-    max-width:980px;
-    margin:0 auto;
-    padding:22px 28px;
-    display:flex;
-    align-items:center;
-    gap:18px;
-  }
-  .logo-mark{
-    width:54px;height:54px;flex:0 0 auto;
-    display:flex;align-items:center;justify-content:center;
-    border-radius:10px;
-    overflow:hidden;
-  }
-  .logo-mark img{
-    width:100%;height:100%;
-    object-fit:cover;
-    display:block;
-  }
-  .brand-text{display:flex;flex-direction:column;line-height:1.15;max-width:260px;}
-  .brand-text .wordmark{
-    font-family:var(--head);
-    font-weight:700;
-    font-size:16.5px;
-    letter-spacing:0.3px;
-    color:#ffffff;
-  }
-  .brand-text .subline{
-    font-size:12px;
-    color:#9fb0c2;
-    margin-top:3px;
-    letter-spacing:0.2px;
-  }
-  .topbar-right{
-    margin-left:auto;
-    text-align:right;
-    font-size:12px;
-    color:#9fb0c2;
-  }
-  .topbar-right .dept{
-    color:#ffffff;
-    font-weight:600;
-    font-family:var(--head);
-    font-size:13px;
-  }
+/* ---------- Top identity bar ---------- */
+.topbar{
+background(--brand-gradient);
+color:#eef2f6;
+border-bottom:3px solid var(--brand-red);
+}
+.topbar-inner{
+max-width:980px;
+margin:0 auto;
+padding:22px 28px;
+display;
+align-items;
+gap:18px;
+}
+.logo-mark{
+width:54px;height:54px;flex:0 0 auto;
+display;align-items;justify-content;
+border-radius:10px;
+overflow;
+}
+.logo-mark img{
+width:100%;height:100%;
+object-fit;
+display;
+}
+.brand-text{display;flex-direction;line-height:1.15;max-width:260px;}
+.brand-text .wordmark{
+font-family(--head);
+font-weight:700;
+font-size:16.5px;
+letter-spacing:0.3px;
+color:#ffffff;
+}
+.brand-text .subline{
+font-size:12px;
+color:#9fb0c2;
+margin-top:3px;
+letter-spacing:0.2px;
+}
+.topbar-right{
+margin-left;
+text-align;
+font-size:12px;
+color:#9fb0c2;
+}
+.topbar-right .dept{
+color:#ffffff;
+font-weight:600;
+font-family(--head);
+font-size:13px;
+}
 
-  /* ---------- Title block ---------- */
-  .titleblock{
-    background:linear-gradient(135deg,var(--brand-blue-dark) 0%,var(--brand-purple) 55%,var(--brand-red-dark) 100%);
-    color:#fff;
-  }
-  .titleblock-inner{
-    max-width:980px;
-    margin:0 auto;
-    padding:34px 28px 30px;
-  }
-  .titleblock h1{
-    font-family:var(--head);
-    font-weight:700;
-    font-size:clamp(24px,3vw,32px);
-    margin:0 0 8px;
-    letter-spacing:0.2px;
-  }
-  .titleblock p.desc{
-    margin:0;
-    color:#cdd9e6;
-    font-size:14.5px;
-    max-width:640px;
-  }
-  .meta-strip{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:22px;
-  }
-  .meta-chip{
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.16);
-    border-radius:8px;
-    padding:10px 14px;
-    min-width:150px;
-  }
-  .meta-chip .label{
-    font-size:10.5px;
-    text-transform:uppercase;
-    letter-spacing:0.8px;
-    color:#a9bbcd;
-    margin-bottom:3px;
-  }
-  .meta-chip .value{
-    font-family:var(--mono);
-    font-size:14px;
-    font-weight:600;
-    color:#fff;
-  }
+/* ---------- Title block ---------- */
+.titleblock{
+background(135deg,var(--brand-blue-dark) 0%,var(--brand-purple) 55%,var(--brand-red-dark) 100%);
+color:#fff;
+}
+.titleblock-inner{
+max-width:980px;
+margin:0 auto;
+padding:34px 28px 30px;
+}
+.titleblock h1{
+font-family(--head);
+font-weight:700;
+font-size(24px,3vw,32px);
+margin:0 0 8px;
+letter-spacing:0.2px;
+}
+.titleblock p.desc{
+margin:0;
+color:#cdd9e6;
+font-size:14.5px;
+max-width:640px;
+}
+.meta-strip{
+display;
+flex-wrap;
+gap:10px;
+margin-top:22px;
+}
+.meta-chip{
+background(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.16);
+border-radius:8px;
+padding:10px 14px;
+min-width:150px;
+}
+.meta-chip .label{
+font-size:10.5px;
+text-transform;
+letter-spacing:0.8px;
+color:#a9bbcd;
+margin-bottom:3px;
+}
+.meta-chip .value{
+font-family(--mono);
+font-size:14px;
+font-weight:600;
+color:#fff;
+}
 
-  /* ---------- Layout ---------- */
-  .page{
-    max-width:980px;
-    margin:0 auto;
-    padding:30px 28px 70px;
-  }
+/* ---------- Layout ---------- */
+.page{
+max-width:980px;
+margin:0 auto;
+padding:30px 28px 70px;
+}
 
-  .section{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    margin-bottom:22px;
-    overflow:hidden;
-  }
-  .section-head{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    padding:18px 22px;
-    border-bottom:1px solid var(--line);
-    background:#fbfcfd;
-  }
-  .section-num{
-    font-family:var(--head);
-    font-weight:700;
-    font-size:15px;
-    color:var(--navy-900);
-    background:var(--amber-500);
-    width:30px;height:30px;
-    border-radius:7px;
-    display:flex;align-items:center;justify-content:center;
-    flex:0 0 auto;
-  }
-  .section-head h2{
-    font-family:var(--head);
-    font-size:16.5px;
-    font-weight:600;
-    margin:0;
-    color:var(--ink-900);
-  }
-  .section-head .hint{
-    margin-left:auto;
-    font-size:12px;
-    color:var(--ink-400);
-  }
-  .section-body{padding:22px;}
+.section{
+background(--card);
+border:1px solid var(--line);
+border-radius(--radius);
+margin-bottom:22px;
+overflow;
+}
+.section-head{
+display;
+align-items;
+gap:14px;
+padding:18px 22px;
+border-bottom:1px solid var(--line);
+background:#fbfcfd;
+}
+.section-num{
+font-family(--head);
+font-weight:700;
+font-size:15px;
+color(--navy-900);
+background(--amber-500);
+width:30px;height:30px;
+border-radius:7px;
+display;align-items;justify-content;
+flex:0 0 auto;
+}
+.section-head h2{
+font-family(--head);
+font-size:16.5px;
+font-weight:600;
+margin:0;
+color(--ink-900);
+}
+.section-head .hint{
+margin-left;
+font-size:12px;
+color(--ink-400);
+}
+.section-body{padding:22px;}
 
-  .grid2{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-  }
-  @media (max-width:640px){
-    .grid2{grid-template-columns:1fr;}
-    .topbar-inner{padding:18px 20px;}
-    .titleblock-inner{padding:26px 20px;}
-    .page{padding:22px 16px 60px;}
-  }
+.grid2{
+display;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+@media (max-width:640px){
+.grid2{grid-template-columns:1fr;}
+.topbar-inner{padding:18px 20px;}
+.titleblock-inner{padding:26px 20px;}
+.page{padding:22px 16px 60px;}
+}
 
-  .field{margin-bottom:16px;}
-  .field:last-child{margin-bottom:0;}
-  .field label{
-    display:block;
-    font-size:12.5px;
-    font-weight:600;
-    color:var(--ink-700);
-    margin-bottom:6px;
-  }
-  .field label .req{color:var(--danger);margin-left:2px;}
-  .field .subtext{
-    font-size:11.5px;
-    color:var(--ink-400);
-    margin-top:5px;
-  }
+.field{margin-bottom:16px;}
+.field{margin-bottom:0;}
+.field label{
+display;
+font-size:12.5px;
+font-weight:600;
+color(--ink-700);
+margin-bottom:6px;
+}
+.field label .req{color(--danger);margin-left:2px;}
+.field .subtext{
+font-size:11.5px;
+color(--ink-400);
+margin-top:5px;
+}
 
-  select, input[type=text], input[type=datetime-local], textarea{
-    width:100%;
-    padding:10px 12px;
-    border:1px solid var(--line);
-    border-radius:7px;
-    font-size:14px;
-    font-family:var(--body);
-    color:var(--ink-900);
-    background:#fff;
-    transition:border-color .15s, box-shadow .15s;
-  }
-  select:focus, input:focus, textarea:focus{
-    outline:none;
-    border-color:var(--steel-500);
-    box-shadow:0 0 0 3px rgba(47,24,183,0.16);
-  }
-  textarea{resize:vertical;min-height:96px;}
+select, input[type=text], input[type=datetime-local], textarea{
+width:100%;
+padding:10px 12px;
+border:1px solid var(--line);
+border-radius:7px;
+font-size:14px;
+font-family(--body);
+color(--ink-900);
+background:#fff;
+transition .15s, box-shadow .15s;
+}
+select, input, textarea{
+outline;
+border-color(--steel-500);
+box-shadow:0 0 0 3px rgba(47,24,183,0.16);
+}
+textarea{resize;min-height:96px;}
 
-  /* file upload */
-  .upload-box{
-    border:1.5px dashed var(--line);
-    border-radius:8px;
-    padding:14px;
-    background:#fbfcfd;
-    display:flex;
-    align-items:center;
-    gap:14px;
-    flex-wrap:wrap;
-  }
-  .upload-box.has-image{border-style:solid; border-color:var(--steel-500);}
-  .upload-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:7px;
-    background:var(--navy-900);
-    color:#fff;
-    border:none;
-    padding:9px 14px;
-    border-radius:7px;
-    font-size:12.5px;
-    font-weight:600;
-    cursor:pointer;
-    font-family:var(--body);
-  }
-  .upload-btn:hover{background:var(--steel-700);}
-  .upload-box input[type=file]{display:none;}
-  .thumb{
-    width:64px;height:64px;
-    border-radius:6px;
-    object-fit:cover;
-    border:1px solid var(--line);
-    display:none;
-  }
-  .upload-status{
-    font-size:12px;
-    color:var(--ink-500);
-  }
-  .remove-img{
-    font-size:11.5px;
-    color:var(--danger);
-    background:none;
-    border:none;
-    cursor:pointer;
-    text-decoration:underline;
-    padding:0;
-    display:none;
-  }
+/* file upload */
+.upload-box{
+border:1.5px dashed var(--line);
+border-radius:8px;
+padding:14px;
+background:#fbfcfd;
+display;
+align-items;
+gap:14px;
+flex-wrap;
+}
+.upload-box.has-image{border-style; border-color(--steel-500);}
+.upload-btn{
+display;
+align-items;
+gap:7px;
+background(--navy-900);
+color:#fff;
+border;
+padding:9px 14px;
+border-radius:7px;
+font-size:12.5px;
+font-weight:600;
+cursor;
+font-family(--body);
+}
+.upload-btn{background(--steel-700);}
+.upload-box input[type=file]{display;}
+.thumb{
+width:64px;height:64px;
+border-radius:6px;
+object-fit;
+border:1px solid var(--line);
+display;
+}
+.upload-status{
+font-size:12px;
+color(--ink-500);
+}
+.remove-img{
+font-size:11.5px;
+color(--danger);
+background;
+border;
+cursor;
+text-decoration;
+padding:0;
+display;
+}
 
-  /* damage toggle cards */
-  .damage-card{
-    border:1px solid var(--line);
-    border-radius:8px;
-    margin-bottom:14px;
-    overflow:hidden;
-  }
-  .damage-card:last-child{margin-bottom:0;}
-  .damage-toggle-row{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 16px;
-    background:#fbfcfd;
-    cursor:pointer;
-  }
-  .damage-toggle-row .comp-name{
-    font-weight:600;
-    font-size:14px;
-    color:var(--ink-900);
-    font-family:var(--head);
-  }
-  .damage-toggle-row .comp-sub{
-    font-size:11.5px;
-    color:var(--ink-400);
-  }
-  .switch{
-    position:relative;
-    width:40px;height:22px;
-    flex:0 0 auto;
-    margin-left:auto;
-  }
-  .switch input{opacity:0;width:0;height:0;position:absolute;}
-  .slider{
-    position:absolute;inset:0;
-    background:#cfd7df;
-    border-radius:999px;
-    transition:.15s;
-  }
-  .slider::before{
-    content:"";
-    position:absolute;
-    width:16px;height:16px;
-    left:3px;top:3px;
-    background:#fff;
-    border-radius:50%;
-    transition:.15s;
-    box-shadow:0 1px 2px rgba(0,0,0,0.25);
-  }
-  .switch input:checked + .slider{background:var(--danger);}
-  .switch input:checked + .slider::before{transform:translateX(18px);}
+/* damage toggle cards */
+.damage-card{
+border:1px solid var(--line);
+border-radius:8px;
+margin-bottom:14px;
+overflow;
+}
+.damage-card{margin-bottom:0;}
+.damage-toggle-row{
+display;
+align-items;
+gap:12px;
+padding:14px 16px;
+background:#fbfcfd;
+cursor;
+}
+.damage-toggle-row .comp-name{
+font-weight:600;
+font-size:14px;
+color(--ink-900);
+font-family(--head);
+}
+.damage-toggle-row .comp-sub{
+font-size:11.5px;
+color(--ink-400);
+}
+.switch{
+position;
+width:40px;height:22px;
+flex:0 0 auto;
+margin-left;
+}
+.switch input{opacity:0;width:0;height:0;position;}
+.slider{
+position;inset:0;
+background:#cfd7df;
+border-radius:999px;
+transition:.15s;
+}
+.slider::before{
+content:"";
+position;
+width:16px;height:16px;
+left:3px;top:3px;
+background:#fff;
+border-radius:50%;
+transition:.15s;
+box-shadow:0 1px 2px rgba(0,0,0,0.25);
+}
+.switch input + .slider{background(--danger);}
+.switch input + .slider::before{transform(18px);}
 
-  .damage-body{
-    display:none;
-    padding:16px;
-    border-top:1px solid var(--line);
-    background:#fff;
-  }
-  .damage-card.open .damage-body{display:block;}
-  .damage-card.open .damage-toggle-row{background:var(--danger-bg);}
-  .status-pill{
-    font-size:10.5px;
-    font-weight:600;
-    padding:3px 9px;
-    border-radius:999px;
-    background:#eef1f4;
-    color:var(--ink-500);
-    text-transform:uppercase;
-    letter-spacing:0.4px;
-  }
-  .damage-card.open .status-pill{background:var(--danger);color:#fff;}
+.damage-body{
+display;
+padding:16px;
+border-top:1px solid var(--line);
+background:#fff;
+}
+.damage-card.open .damage-body{display;}
+.damage-card.open .damage-toggle-row{background(--danger-bg);}
+.status-pill{
+font-size:10.5px;
+font-weight:600;
+padding:3px 9px;
+border-radius:999px;
+background:#eef1f4;
+color(--ink-500);
+text-transform;
+letter-spacing:0.4px;
+}
+.damage-card.open .status-pill{background(--danger);color:#fff;}
 
-  /* buttons */
-  .actions-bar{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    align-items:center;
-    padding:20px 22px;
-  }
-  .btn{
-    font-family:var(--body);
-    font-weight:600;
-    font-size:13.5px;
-    padding:12px 20px;
-    border-radius:8px;
-    border:none;
-    cursor:pointer;
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    transition:transform .05s, background .15s;
-  }
-  .btn:active{transform:translateY(1px);}
-  .btn-primary{background:var(--brand-gradient-vivid);color:#fff;box-shadow:0 2px 10px rgba(46,20,140,0.28);}
-  .btn-primary:hover{filter:brightness(1.08);}
-  .btn-secondary{background:var(--brand-blue-dark);color:#fff;}
-  .btn-secondary:hover{background:var(--brand-blue);}
-  .btn-ghost{background:transparent;color:var(--ink-500);border:1px solid var(--line);}
-  .btn-ghost:hover{border-color:var(--ink-400);color:var(--ink-700);}
-  .btn:disabled{opacity:0.45;cursor:not-allowed;}
+/* buttons */
+.actions-bar{
+display;
+gap:12px;
+flex-wrap;
+align-items;
+padding:20px 22px;
+}
+.btn{
+font-family(--body);
+font-weight:600;
+font-size:13.5px;
+padding:12px 20px;
+border-radius:8px;
+border;
+cursor;
+display;
+align-items;
+gap:8px;
+transition .05s, background .15s;
+}
+.btn{transform(1px);}
+.btn-primary{background(--brand-gradient-vivid);color:#fff;box-shadow:0 2px 10px rgba(46,20,140,0.28);}
+.btn-primary{filter(1.08);}
+.btn-secondary{background(--brand-blue-dark);color:#fff;}
+.btn-secondary{background(--brand-blue);}
+.btn-ghost{background;color(--ink-500);border:1px solid var(--line);}
+.btn-ghost{border-color(--ink-400);color(--ink-700);}
+.btn{opacity:0.45;cursor;}
 
-  .form-msg{
-    font-size:12.5px;
-    padding:10px 14px;
-    border-radius:7px;
-    margin:0 22px 18px;
-    display:none;
-  }
-  .form-msg.err{display:block;background:var(--danger-bg);color:var(--danger);}
-  .form-msg.ok{display:block;background:var(--ok-bg);color:var(--ok);}
+.form-msg{
+font-size:12.5px;
+padding:10px 14px;
+border-radius:7px;
+margin:0 22px 18px;
+display;
+}
+.form-msg.err{display;background(--danger-bg);color(--danger);}
+.form-msg.ok{display;background(--ok-bg);color(--ok);}
 
-  /* records log */
-  .log-section table{
-    width:100%;
-    border-collapse:collapse;
-    font-size:12.5px;
-  }
-  .log-section th{
-    text-align:left;
-    font-family:var(--head);
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:0.5px;
-    color:var(--ink-500);
-    border-bottom:1px solid var(--line);
-    padding:8px 10px;
-  }
-  .log-section td{
-    padding:10px;
-    border-bottom:1px solid var(--line);
-    color:var(--ink-700);
-  }
-  .log-section td.ref{font-family:var(--mono);font-weight:600;color:var(--navy-900);}
-  .empty-log{
-    padding:28px 22px;
-    text-align:center;
-    color:var(--ink-400);
-    font-size:13px;
-  }
+/* records log */
+.log-section table{
+width:100%;
+border-collapse;
+font-size:12.5px;
+}
+.log-section th{
+text-align;
+font-family(--head);
+font-size:11px;
+text-transform;
+letter-spacing:0.5px;
+color(--ink-500);
+border-bottom:1px solid var(--line);
+padding:8px 10px;
+}
+.log-section td{
+padding:10px;
+border-bottom:1px solid var(--line);
+color(--ink-700);
+}
+.log-section td.ref{font-family(--mono);font-weight:600;color(--navy-900);}
+.empty-log{
+padding:28px 22px;
+text-align;
+color(--ink-400);
+font-size:13px;
+}
 
-  .footer-note{
-    max-width:980px;
-    margin:0 auto;
-    padding:0 28px 50px;
-    font-size:12px;
-    color:var(--ink-400);
-    line-height:1.7;
-  }
-  .footer-note strong{color:var(--ink-500);}
+.footer-note{
+max-width:980px;
+margin:0 auto;
+padding:0 28px 50px;
+font-size:12px;
+color(--ink-400);
+line-height:1.7;
+}
+.footer-note strong{color(--ink-500);}
 
-  .prepared-by{
-    font-size:12.5px;
-    color:#9fb0c2;
-    margin-top:16px;
-    padding-top:16px;
-    border-top:1px solid rgba(255,255,255,0.14);
-  }
-  .prepared-by b{color:#fff;}
+.prepared-by{
+font-size:12.5px;
+color:#9fb0c2;
+margin-top:16px;
+padding-top:16px;
+border-top:1px solid rgba(255,255,255,0.14);
+}
+.prepared-by b{color:#fff;}
 </style>
+
 </head>
 <body>
 
 <!-- ============ TOP IDENTITY BAR ============ -->
+
 <div class="topbar">
   <div class="topbar-inner">
     <!-- Official Knox logo, embedded as base64 so this file stays fully self-contained/portable. -->
@@ -479,6 +482,7 @@
 </div>
 
 <!-- ============ TITLE BLOCK ============ -->
+
 <div class="titleblock">
   <div class="titleblock-inner">
     <h1>Before Battery Parts Replacement Approval Form</h1>
@@ -505,238 +509,253 @@
 
   <form id="approvalForm" novalidate>
 
-    <!-- ============ 1. PRODUCT & LAB ============ -->
-    <div class="section">
-      <div class="section-head">
-        <div class="section-num">1</div>
-        <h2>Product &amp; Lab Information</h2>
-        <span class="hint">Required</span>
+<!-- ============ 1. PRODUCT & LAB ============ -->
+<div class="section">
+  <div class="section-head">
+    <div class="section-num">1</div>
+    <h2>Product &amp; Lab Information</h2>
+    <span class="hint">Required</span>
+  </div>
+  <div class="section-body">
+    <div class="grid2">
+      <div class="field">
+        <label>Battery Model <span class="req">*</span></label>
+        <select id="batteryModel" required>
+          <option value="" disabled selected>Select battery model…</option>
+          <!-- Populated from BATTERY_MODELS in script -->
+        </select>
       </div>
-      <div class="section-body">
+      <div class="field">
+        <label>Lab Name <span class="req">*</span></label>
+        <select id="labName" required>
+          <option value="" disabled selected>Select lab…</option>
+          <!-- Populated from LAB_NAMES in script -->
+        </select>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="field">
+        <label>Product Serial Number <span class="req">*</span></label>
+        <input type="text" id="serialNumber" placeholder="e.g. PW6-2026-004821" required>
+        <div class="subtext">Enter the physical serial number exactly as printed on the unit.</div>
+      </div>
+      <div class="field">
+        <label>Date &amp; Time of Inspection <span class="req">*</span></label>
+        <input type="datetime-local" id="inspectionDateTime" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Serial Number Photo <span class="req">*</span></label>
+      <div class="upload-box" id="box-serialPhoto">
+        <label class="upload-btn">
+          📷 Upload / Take Photo
+          <input type="file" accept="image/*" capture="environment" id="serialPhoto">
+        </label>
+        <img class="thumb" id="thumb-serialPhoto">
+        <span class="upload-status" id="status-serialPhoto">No photo attached</span>
+        <button type="button" class="remove-img" id="remove-serialPhoto">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 2. ISSUE DESCRIPTION ============ -->
+<div class="section">
+  <div class="section-head">
+    <div class="section-num">2</div>
+    <h2>Issue / Problem Description</h2>
+    <span class="hint">Required</span>
+  </div>
+  <div class="section-body">
+    <div class="field">
+      <label>Describe the complete issue <span class="req">*</span></label>
+      <textarea id="issueDescription" placeholder="Describe the fault, symptoms, and any diagnostic steps already taken…" required></textarea>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 3. COMPONENT DAMAGE ASSESSMENT ============ -->
+<div class="section">
+  <div class="section-head">
+    <div class="section-num">3</div>
+    <h2>Component Damage Assessment</h2>
+    <span class="hint">Toggle the components found damaged or faulty</span>
+  </div>
+  <div class="section-body">
+
+    <!-- BMS -->
+    <div class="damage-card" id="card-bms">
+      <div class="damage-toggle-row" data-target="bms">
+        <div>
+          <div class="comp-name">BMS (Battery Management System)</div>
+          <div class="comp-sub">Mark if the BMS is damaged or faulty</div>
+        </div>
+        <span class="status-pill" id="pill-bms">Not Flagged</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-bms">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="damage-body">
         <div class="grid2">
           <div class="field">
-            <label>Battery Model <span class="req">*</span></label>
-            <select id="batteryModel" required>
-              <option value="" disabled selected>Select battery model…</option>
-              <!-- Populated from BATTERY_MODELS in script -->
-            </select>
+            <label>BMS Serial Number</label>
+            <input type="text" id="bmsSerial" placeholder="Enter BMS serial number">
           </div>
           <div class="field">
-            <label>Lab Name <span class="req">*</span></label>
-            <select id="labName" required>
-              <option value="" disabled selected>Select lab…</option>
-              <!-- Populated from LAB_NAMES in script -->
-            </select>
+            <label>Photo of Damaged/Faulty BMS</label>
+            <div class="upload-box" id="box-bmsPhoto">
+              <label class="upload-btn">📷 Upload / Take Photo
+                <input type="file" accept="image/*" capture="environment" id="bmsPhoto">
+              </label>
+              <img class="thumb" id="thumb-bmsPhoto">
+              <span class="upload-status" id="status-bmsPhoto">No photo attached</span>
+              <button type="button" class="remove-img" id="remove-bmsPhoto">Remove</button>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
+    <!-- LCD -->
+    <div class="damage-card" id="card-lcd">
+      <div class="damage-toggle-row" data-target="lcd">
+        <div>
+          <div class="comp-name">LCD Display</div>
+          <div class="comp-sub">Mark if the LCD is damaged or faulty</div>
+        </div>
+        <span class="status-pill" id="pill-lcd">Not Flagged</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-lcd">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="damage-body">
         <div class="grid2">
           <div class="field">
-            <label>Product Serial Number <span class="req">*</span></label>
-            <input type="text" id="serialNumber" placeholder="e.g. PW6-2026-004821" required>
-            <div class="subtext">Enter the physical serial number exactly as printed on the unit.</div>
+            <label>LCD Serial Number / Details</label>
+            <input type="text" id="lcdSerial" placeholder="Enter LCD serial number / details">
           </div>
           <div class="field">
-            <label>Date &amp; Time of Inspection <span class="req">*</span></label>
-            <input type="datetime-local" id="inspectionDateTime" required>
-          </div>
-        </div>
-
-        <div class="field">
-          <label>Serial Number Photo <span class="req">*</span></label>
-          <div class="upload-box" id="box-serialPhoto">
-            <label class="upload-btn">
-              📷 Upload / Take Photo
-              <input type="file" accept="image/*" capture="environment" id="serialPhoto">
-            </label>
-            <img class="thumb" id="thumb-serialPhoto">
-            <span class="upload-status" id="status-serialPhoto">No photo attached</span>
-            <button type="button" class="remove-img" id="remove-serialPhoto">Remove</button>
+            <label>Photo of Damaged/Faulty LCD</label>
+            <div class="upload-box" id="box-lcdPhoto">
+              <label class="upload-btn">📷 Upload / Take Photo
+                <input type="file" accept="image/*" capture="environment" id="lcdPhoto">
+              </label>
+              <img class="thumb" id="thumb-lcdPhoto">
+              <span class="upload-status" id="status-lcdPhoto">No photo attached</span>
+              <button type="button" class="remove-img" id="remove-lcdPhoto">Remove</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ============ 2. ISSUE DESCRIPTION ============ -->
-    <div class="section">
-      <div class="section-head">
-        <div class="section-num">2</div>
-        <h2>Issue / Problem Description</h2>
-        <span class="hint">Required</span>
+    <!-- COM CARD -->
+    <div class="damage-card" id="card-comcard">
+      <div class="damage-toggle-row" data-target="comcard">
+        <div>
+          <div class="comp-name">COM CARD</div>
+          <div class="comp-sub">Mark if the COM CARD is damaged or faulty</div>
+        </div>
+        <span class="status-pill" id="pill-comcard">Not Flagged</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-comcard">
+          <span class="slider"></span>
+        </label>
       </div>
-      <div class="section-body">
-        <div class="field">
-          <label>Describe the complete issue <span class="req">*</span></label>
-          <textarea id="issueDescription" placeholder="Describe the fault, symptoms, and any diagnostic steps already taken…" required></textarea>
+      <div class="damage-body">
+        <div class="grid2">
+          <div class="field">
+            <label>COM CARD Serial Number / Details</label>
+            <input type="text" id="comcardSerial" placeholder="Enter COM CARD serial number / details">
+          </div>
+          <div class="field">
+            <label>Photo of Damaged/Faulty COM CARD</label>
+            <div class="upload-box" id="box-comcardPhoto">
+              <label class="upload-btn">📷 Upload / Take Photo
+                <input type="file" accept="image/*" capture="environment" id="comcardPhoto">
+              </label>
+              <img class="thumb" id="thumb-comcardPhoto">
+              <span class="upload-status" id="status-comcardPhoto">No photo attached</span>
+              <button type="button" class="remove-img" id="remove-comcardPhoto">Remove</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- ============ 3. COMPONENT DAMAGE ASSESSMENT ============ -->
-    <div class="section">
-      <div class="section-head">
-        <div class="section-num">3</div>
-        <h2>Component Damage Assessment</h2>
-        <span class="hint">Toggle the components found damaged or faulty</span>
+    <!-- Unknown / Other -->
+    <div class="damage-card" id="card-unknown">
+      <div class="damage-toggle-row" data-target="unknown">
+        <div>
+          <div class="comp-name">Unknown / Other Component</div>
+          <div class="comp-sub">Mark if a component is damaged but its exact name is unknown</div>
+        </div>
+        <span class="status-pill" id="pill-unknown">Not Flagged</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-unknown">
+          <span class="slider"></span>
+        </label>
       </div>
-      <div class="section-body">
-
-        <!-- BMS -->
-        <div class="damage-card" id="card-bms">
-          <div class="damage-toggle-row" data-target="bms">
-            <div>
-              <div class="comp-name">BMS (Battery Management System)</div>
-              <div class="comp-sub">Mark if the BMS is damaged or faulty</div>
-            </div>
-            <span class="status-pill" id="pill-bms">Not Flagged</span>
-            <label class="switch">
-              <input type="checkbox" id="toggle-bms">
-              <span class="slider"></span>
-            </label>
+      <div class="damage-body">
+        <div class="grid2">
+          <div class="field">
+            <label>Description (if possible)</label>
+            <input type="text" id="unknownDescription" placeholder="Describe the component / location, if known">
           </div>
-          <div class="damage-body">
-            <div class="grid2">
-              <div class="field">
-                <label>BMS Serial Number</label>
-                <input type="text" id="bmsSerial" placeholder="Enter BMS serial number">
-              </div>
-              <div class="field">
-                <label>Photo of Damaged/Faulty BMS</label>
-                <div class="upload-box" id="box-bmsPhoto">
-                  <label class="upload-btn">📷 Upload / Take Photo
-                    <input type="file" accept="image/*" capture="environment" id="bmsPhoto">
-                  </label>
-                  <img class="thumb" id="thumb-bmsPhoto">
-                  <span class="upload-status" id="status-bmsPhoto">No photo attached</span>
-                  <button type="button" class="remove-img" id="remove-bmsPhoto">Remove</button>
-                </div>
-              </div>
+          <div class="field">
+            <label>Photo of Damaged Component</label>
+            <div class="upload-box" id="box-unknownPhoto">
+              <label class="upload-btn">📷 Upload / Take Photo
+                <input type="file" accept="image/*" capture="environment" id="unknownPhoto">
+              </label>
+              <img class="thumb" id="thumb-unknownPhoto">
+              <span class="upload-status" id="status-unknownPhoto">No photo attached</span>
+              <button type="button" class="remove-img" id="remove-unknownPhoto">Remove</button>
             </div>
           </div>
         </div>
-
-        <!-- LCD -->
-        <div class="damage-card" id="card-lcd">
-          <div class="damage-toggle-row" data-target="lcd">
-            <div>
-              <div class="comp-name">LCD Display</div>
-              <div class="comp-sub">Mark if the LCD is damaged or faulty</div>
-            </div>
-            <span class="status-pill" id="pill-lcd">Not Flagged</span>
-            <label class="switch">
-              <input type="checkbox" id="toggle-lcd">
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="damage-body">
-            <div class="grid2">
-              <div class="field">
-                <label>LCD Serial Number / Details</label>
-                <input type="text" id="lcdSerial" placeholder="Enter LCD serial number / details">
-              </div>
-              <div class="field">
-                <label>Photo of Damaged/Faulty LCD</label>
-                <div class="upload-box" id="box-lcdPhoto">
-                  <label class="upload-btn">📷 Upload / Take Photo
-                    <input type="file" accept="image/*" capture="environment" id="lcdPhoto">
-                  </label>
-                  <img class="thumb" id="thumb-lcdPhoto">
-                  <span class="upload-status" id="status-lcdPhoto">No photo attached</span>
-                  <button type="button" class="remove-img" id="remove-lcdPhoto">Remove</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- COM CARD -->
-        <div class="damage-card" id="card-comcard">
-          <div class="damage-toggle-row" data-target="comcard">
-            <div>
-              <div class="comp-name">COM CARD</div>
-              <div class="comp-sub">Mark if the COM CARD is damaged or faulty</div>
-            </div>
-            <span class="status-pill" id="pill-comcard">Not Flagged</span>
-            <label class="switch">
-              <input type="checkbox" id="toggle-comcard">
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="damage-body">
-            <div class="grid2">
-              <div class="field">
-                <label>COM CARD Serial Number / Details</label>
-                <input type="text" id="comcardSerial" placeholder="Enter COM CARD serial number / details">
-              </div>
-              <div class="field">
-                <label>Photo of Damaged/Faulty COM CARD</label>
-                <div class="upload-box" id="box-comcardPhoto">
-                  <label class="upload-btn">📷 Upload / Take Photo
-                    <input type="file" accept="image/*" capture="environment" id="comcardPhoto">
-                  </label>
-                  <img class="thumb" id="thumb-comcardPhoto">
-                  <span class="upload-status" id="status-comcardPhoto">No photo attached</span>
-                  <button type="button" class="remove-img" id="remove-comcardPhoto">Remove</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Unknown / Other -->
-        <div class="damage-card" id="card-unknown">
-          <div class="damage-toggle-row" data-target="unknown">
-            <div>
-              <div class="comp-name">Unknown / Other Component</div>
-              <div class="comp-sub">Mark if a component is damaged but its exact name is unknown</div>
-            </div>
-            <span class="status-pill" id="pill-unknown">Not Flagged</span>
-            <label class="switch">
-              <input type="checkbox" id="toggle-unknown">
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="damage-body">
-            <div class="grid2">
-              <div class="field">
-                <label>Description (if possible)</label>
-                <input type="text" id="unknownDescription" placeholder="Describe the component / location, if known">
-              </div>
-              <div class="field">
-                <label>Photo of Damaged Component</label>
-                <div class="upload-box" id="box-unknownPhoto">
-                  <label class="upload-btn">📷 Upload / Take Photo
-                    <input type="file" accept="image/*" capture="environment" id="unknownPhoto">
-                  </label>
-                  <img class="thumb" id="thumb-unknownPhoto">
-                  <span class="upload-status" id="status-unknownPhoto">No photo attached</span>
-                  <button type="button" class="remove-img" id="remove-unknownPhoto">Remove</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <!-- ============ 4. SUBMIT ============ -->
-    <div class="section">
-      <div class="section-head">
-        <div class="section-num">4</div>
-        <h2>Review &amp; Submit</h2>
-        <span class="hint">Generates PDF report and logs the record</span>
-      </div>
-      <div class="form-msg" id="formMsg"></div>
-      <div class="actions-bar">
-        <button type="submit" class="btn btn-primary" id="submitBtn">Generate PDF &amp; Save Record</button>
-        <button type="button" class="btn btn-ghost" id="resetBtn">Clear Form</button>
-      </div>
-    </div>
+  </div>
+</div>
+
+<!-- ============ 4. SUBMIT ============ -->
+<div class="section">
+  <div class="section-head">
+    <div class="section-num">4</div>
+    <h2>Review &amp; Submit</h2>
+    <span class="hint">Generates PDF report and logs the record</span>
+  </div>
+  <div class="form-msg" id="formMsg"></div>
+  <div class="actions-bar">
+    <button type="submit" class="btn btn-primary" id="submitBtn">Generate PDF &amp; Save Record</button>
+    <button type="button" class="btn btn-ghost" id="resetBtn">Clear Form</button>
+  </div>
+</div>
 
   </form>
 
-  
+  <!-- ============ RECORD LOG ============ -->
+
+  <div class="section log-section">
+    <div class="section-head">
+      <div class="section-num" style="background:var(--navy-900);color:#fff;">⧉</div>
+      <h2>Submitted Records (this device)</h2>
+      <span class="hint" id="hintExport"></span>
+    </div>
+    <div id="logTableWrap">
+      <div class="empty-log" id="emptyLog">No records submitted yet on this device.</div>
+    </div>
+    <div class="actions-bar" style="border-top:1px solid var(--line);">
+      <button type="button" class="btn btn-secondary" id="exportExcelBtn" disabled>Export All Records to Excel (.xlsx)</button>
+      <button type="button" class="btn btn-ghost" id="clearLogBtn" disabled>Clear Local Log</button>
+    </div>
+  </div>
 
 </div>
 
@@ -909,12 +928,39 @@ function saveRecords(records){
   localStorage.setItem('docs_bpr_records', JSON.stringify(records));
 }
 function renderLog(){
-  // Local record log UI has been removed.
-  // Keep this function for compatibility with the existing submit flow.
-  const countEl = document.getElementById('recordCountDisplay');
-  if(countEl){
-    countEl.textContent = loadRecords().length;
+  const records = loadRecords();
+  const wrap = document.getElementById('logTableWrap');
+  document.getElementById('recordCountDisplay').textContent = records.length;
+  const exportBtn = document.getElementById('exportExcelBtn');
+  const clearBtn = document.getElementById('clearLogBtn');
+  exportBtn.disabled = records.length === 0;
+  clearBtn.disabled = records.length === 0;
+
+  if(records.length === 0){
+    wrap.innerHTML = '<div class="empty-log" id="emptyLog">No records submitted yet on this device.</div>';
+    return;
   }
+  let rows = records.slice().reverse().map(r=>{
+    const flags = [];
+    if(r.bmsFlagged) flags.push('BMS');
+    if(r.lcdFlagged) flags.push('LCD');
+    if(r.comcardFlagged) flags.push('COM CARD');
+    if(r.unknownFlagged) flags.push('Other');
+    return `<tr>
+      <td class="ref">${r.referenceNumber}</td>
+      <td>${r.batteryModel}</td>
+      <td>${r.labName}</td>
+      <td>${r.serialNumber}</td>
+      <td>${(r.inspectionDateTime||'').replace('T',' ')}</td>
+      <td>${flags.join(', ') || '—'}</td>
+    </tr>`;
+  }).join('');
+  wrap.innerHTML = `<table>
+    <thead><tr>
+      <th>Reference No.</th><th>Battery Model</th><th>Lab</th><th>Serial No.</th><th>Date &amp; Time</th><th>Flagged Components</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
 }
 renderLog();
 
@@ -951,7 +997,7 @@ document.getElementById('exportExcelBtn').addEventListener('click', ()=>{
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, 'BPR Records');
   const stamp = new Date().toISOString().slice(0,10);
-  XLSX.writeFile(wb, `KNOX-Battery-Parts-Replacement-Records-${stamp}.xlsx`);
+  XLSX.writeFile(wb, `KNOX-Battery-Parts-Replacement-Records-${stamp}.xlsx`)
 });
 
 /* ====================== PDF GENERATION ====================== */
@@ -1527,5 +1573,6 @@ document.getElementById('resetBtn').addEventListener('click', ()=>{
   }
 });
 </script>
+
 </body>
 </html>
