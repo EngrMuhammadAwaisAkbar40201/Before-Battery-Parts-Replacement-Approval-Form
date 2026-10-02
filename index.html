@@ -1350,7 +1350,11 @@ async function generatePdf(record){
   doc.setTextColor(...COLORS.muted);
   doc.text(`Generated ${record.submittedAt}  |  KNOX PRODUCT (BATTERIES) internal record  |  Reference ${record.referenceNumber}`, marginX, y);
 
-  doc.save(`${record.referenceNumber}.pdf`);
+  // File name = Product Serial Number (illegal filename characters replaced with "-")
+  const safeSerial = String(record.serialNumber || '')
+    .trim()
+    .replace(/[\\/:*?"<>|]+/g, '-');
+  doc.save(`${safeSerial || record.referenceNumber}.pdf`);
 }
 
 async function drawPhotoBox(doc, COLORS, getImageDims, x, yTop, w, h, label, dataUrl){
