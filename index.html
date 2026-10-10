@@ -121,6 +121,9 @@
   .status-pill{font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:999px;background:#eef1f4;color:var(--ink-500);text-transform:uppercase;letter-spacing:0.4px;}
   .damage-card.open .status-pill{background:var(--danger);color:#fff;}
 
+  .sheet-link{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;color:var(--brand-blue);background:rgba(47,24,183,0.07);border:1px solid rgba(47,24,183,0.25);padding:7px 12px;border-radius:7px;font-size:12.5px !important;transition:background .15s, border-color .15s;}
+  .sheet-link:hover{background:rgba(47,24,183,0.14);border-color:var(--brand-blue);}
+  @media (max-width:640px){#approvalForm .section-head{flex-wrap:wrap;} .sheet-link{margin-left:0 !important;}}
   .actions-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:20px 22px;}
   .btn{font-family:var(--body);font-weight:600;font-size:13.5px;padding:12px 20px;border-radius:8px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:transform .05s, background .15s;}
   .btn:active{transform:translateY(1px);}
@@ -311,7 +314,7 @@
     </div>
 
     <div class="section">
-      <div class="section-head"><div class="section-num">4</div><h2>Review &amp; Submit</h2><span class="hint">Generates PDF report and logs the record</span></div>
+      <div class="section-head"><div class="section-num">4</div><h2>Review &amp; Submit</h2><a class="hint sheet-link" href="https://docs.google.com/spreadsheets/d/1RBZjykqH-b8WXH8k7sb7Bj_LBpMkAuaLHKEK9iGu5os/edit?usp=sharing" target="_blank" rel="noopener noreferrer">📊 Check Approval Status (Google Sheet) ↗</a></div>
       <div class="form-msg" id="formMsg"></div>
       <div class="actions-bar">
         <button type="submit" class="btn btn-primary" id="submitBtn">Generate PDF &amp; Save Record</button>
@@ -321,7 +324,7 @@
 
   </form>
 
-  <div class="section log-section">
+  <div class="section log-section" style="display:none" hidden aria-hidden="true">
     <div class="section-head">
       <div class="section-num" style="background:var(--navy-900);color:#fff;">⧉</div>
       <h2>Submitted Records (this device)</h2>
@@ -337,7 +340,7 @@
 </div>
 
 <div class="footer-note">
-  <strong>Record-keeping note:</strong> Each submission generates a numbered PDF report (downloaded to this device) and is logged locally in your browser so it can be exported as an Excel workbook at any time using the button above. Every submission is also saved automatically to the connected Google Sheet and Google Drive. Once the final lab list and final battery model list are confirmed, this form should be updated accordingly.
+  <strong>Record-keeping note:</strong> Each submission generates a numbered PDF report (downloaded to this device). Every submission is also saved automatically to the connected Google Sheet and Google Drive. Once the final lab list and final battery model list are confirmed, this form should be updated accordingly.
 </div>
 
 <script>
